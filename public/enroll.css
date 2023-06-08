@@ -1,0 +1,122 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.sec-1 {
+    background-color: black;
+    color: white;
+}
+
+.heading-box {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sub-heading {
+    padding-left: 26.4rem;
+}
+
+@media(max-width:637px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    .sub-heading {
+        padding-left: 15rem;
+    }
+}
+
+@media(max-width:441px) {
+    .heading {
+        font-size: 1.4rem;
+    }
+
+    .sub-heading {
+        padding-left: 6rem;
+    }
+}
+
+.sec-2 {
+    background-color: rgb(231, 231, 231)
+}
+
+.fn {
+    padding-top: 1rem;
+    text-align: right;
+    padding-bottom: 1rem;
+}
+
+.ln {
+    padding-top: 1rem;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+@media(max-width:767px) {
+    .fn {
+        text-align: center;
+    }
+
+    .ln {
+        text-align: center;
+    }
+}
+
+.form-inner {
+    text-align: center;
+}
+
+.country {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+
+}
+
+
+.email {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.course {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.btn {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sec-3 {
+    background-color: black;
+    height: 18vh;
+    text-align: center;
+}
+
+.redirect {
+    text-decoration: none;
+    color: rgb(214, 214, 214);
+}
+
+.redirect:hover {
+    color: white;
+}
