@@ -5,7 +5,8 @@ form
 .addEventListener('submit',function(event){
     event.preventDefault()
     let country=document.getElementById('input').value.trim();
-    fetch("https://restcountries.com/v3.1/name/"+country).then(function(res){
+    fetch("https://restcountries.com/v3.1/name/"+country+"?fullText=true").then(function(res){
+       
         return res.json();
     }).then((res)=>{
     if(res.status===404||res.length===0){
