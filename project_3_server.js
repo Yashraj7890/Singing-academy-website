@@ -2,6 +2,7 @@ const exp = require("express");
 require('dotenv').config();
 const mongoose = require("mongoose");
 
+
 mongoose.connect("mongodb+srv://Yash:"+process.env.MONGOPASSWORD+"@cluster0.djeqndd.mongodb.net/customersDB?retryWrites=true&w=majority", { useNewUrlParser: true,useunifiedTopology:true });
 const customerSchema = new mongoose.Schema({
     first_name: String,
@@ -41,7 +42,7 @@ app.get("/error", function (req, res) {
 
 
 app.post("/enroll", function (req, res) {
-    console.log("enroll request");
+  
 
     const fn = req.body.first_name.trim();
     const ln = req.body.last_name.trim();
