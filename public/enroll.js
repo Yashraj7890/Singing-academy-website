@@ -9,6 +9,7 @@ form
        
         return res.json();
     }).then((res)=>{
+
     if(res.status===404||res.length===0){
         swal({
             title: "Error!",
@@ -20,6 +21,7 @@ form
           });
     }
     else{
+        
         form.submit();
     }
     })
