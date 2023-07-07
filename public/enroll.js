@@ -21,7 +21,6 @@ form
           });
     }
     else{
-        
         form.submit();
     }
     })

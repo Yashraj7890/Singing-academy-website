@@ -12,13 +12,7 @@ const customerSchema = new mongoose.Schema({
 });
 const Customer = mongoose.model("Customer", customerSchema);
 
-const customer = new Customer({
-    first_name: "john",
-    last_name: "doer",
-    country: "USA",
-    email: "123@gmail.com",
-    course: "western"
-});
+
 
 
 const bodyParser = require("body-parser")
@@ -47,6 +41,7 @@ app.get("/error", function (req, res) {
 
 
 app.post("/enroll", function (req, res) {
+    console.log("enroll request");
 
     const fn = req.body.first_name.trim();
     const ln = req.body.last_name.trim();
@@ -80,6 +75,8 @@ app.post("/enroll", function (req, res) {
             else {
                 res.redirect("/error")
             }
+        }).catch((err)=>{
+            console.log(err);
         });
 });
 
