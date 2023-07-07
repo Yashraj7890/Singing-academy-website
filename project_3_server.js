@@ -1,6 +1,8 @@
 const exp = require("express");
+require('dotenv').config();
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/customersDB", { useNewUrlParser: true });
+
+mongoose.connect("mongodb+srv://Yash:"+process.env.MONGOPASSWORD+"@cluster0.djeqndd.mongodb.net/customersDB?retryWrites=true&w=majority", { useNewUrlParser: true,useunifiedTopology:true });
 const customerSchema = new mongoose.Schema({
     first_name: String,
     last_name: String,
